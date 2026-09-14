@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+
+data/chroma_db/
+data/processed_chunks.jsonl
+
+.streamlit/
