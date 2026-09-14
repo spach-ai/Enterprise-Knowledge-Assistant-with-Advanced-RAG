@@ -1,3 +1,6 @@
+streamlit>=1.36.0
+python-dotenv>=1.0.1
+
 langchain>=1.0.0
 langchain-core>=1.0.0
 langchain-community>=0.3.0
@@ -14,4 +17,8 @@ rank-bm25>=0.2.2
 pypdf>=4.2.0
 docx2txt>=0.8
 numpy>=1.26.4
-torch>=2.2.0
+
+# Nightly PyTorch stack for Python 3.14
+torch --pre --index-url https://download.pytorch.org/whl/nightly/cpu
+torchvision --pre --index-url https://download.pytorch.org/whl/nightly/cpu
+torchaudio --pre --index-url https://download.pytorch.org/whl/nightly/cpu
