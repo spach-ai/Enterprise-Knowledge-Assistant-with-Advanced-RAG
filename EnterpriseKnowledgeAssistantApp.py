@@ -246,13 +246,13 @@ def is_personal_fact_statement(text: str) -> bool:
     Detects pure personal statements.
 
     True:
-        My name is Sakthivel
-        My name Sakthivel
-        I am Sakthivel
-        I'm Sakthivel
+        My name is Bob
+        My name Bob
+        I am Bob
+        I'm Bob
 
     False:
-        My name is Sakthivel. What is the leave policy?
+        My name is Bob. What is the leave policy?
     """
 
     text = text.strip().lower()
@@ -315,7 +315,7 @@ def remove_personal_fact_from_question(text: str) -> str:
     Removes a personal introduction before document retrieval.
 
     Example:
-        My name Sakthivel. What is the leave policy?
+        My name Bob. What is the leave policy?
 
     Result:
         What is the leave policy?
@@ -407,10 +407,10 @@ def is_assistant_identity_question(text: str) -> bool:
 def normalize_personal_fact(text: str) -> str:
     """
     Converts:
-        My name Sakthivel
+        My name Bob
 
     Into:
-        My name is Sakthivel
+        My name is Bob
     """
 
     return re.sub(
