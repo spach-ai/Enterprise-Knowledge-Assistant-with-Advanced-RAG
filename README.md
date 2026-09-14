@@ -66,9 +66,17 @@ It combines semantic vector search, BM25 keyword search, document reranking, and
 	```		
 	
 ### 4. Configure environment
-	Create a `.env` file in the project root
+	Rename a `.env.example` to `.env` file in the project root
+	# OpenAPI Details
 	OPENAI_API_KEY=your_openai_api_key
 	OPENAI_MODEL=gpt-4o-mini
+	
+	# Gemini API Details
+	GEMINI_API_KEY=your_gemini_api_key
+	GEMINI_MODEL=gemini-2.5-flash
+	
+	# You can choose "openai" or "gemini" as option in LLM_PROVIDER
+	LLM_PROVIDER=openai	
 
 ### 5. Add documents
 	Place company documents in:
